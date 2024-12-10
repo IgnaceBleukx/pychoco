@@ -748,6 +748,22 @@ void* cumulative(void* modelHandle, void* tasksHandle, void* heightsHandle, void
         incr
     );
 }
+
+void cumulative_impl(void* modelHandle, void* bvHandle, void* startHandle, void* durHandle, void* endHandle,  void* heightsHandle, void* capacityHandle, int incr) {
+    LAZY_THREAD_ATTACH
+    return Java_org_chocosolver_capi_ConstraintApi_cumulative_impl(
+        thread,
+        modelHandle,
+        bvHandle,
+        startHandle,
+        durHandle,
+        endHandle,
+        heightsHandle,
+        capacityHandle,
+        incr
+    );
+}
+
 void* diff_n(void* modelHandle, void* XHandle, void* YHandle, void* widthHandle, void* heightHandle,
              int addCumulativeReasoning) {
     LAZY_THREAD_ATTACH
