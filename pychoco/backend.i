@@ -233,6 +233,7 @@ void* cost_regular(void*, void*, void*, void*);
 void* count_i(void*, int, void*, void*);
 void* count_iv(void*, void*, void*, void*);
 void* cumulative(void*, void*, void*, void*, int);
+void* cumulative_vars(void*, void*, void*, void*, void*, void*, int);
 void* diff_n(void*, void*, void*, void*, void*, int);
 void* decreasing(void*, void*, int);
 void* increasing(void*, void*, int);
