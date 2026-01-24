@@ -1,3 +1,7 @@
+# pychoco 0.2.5
+
+- Nothing new, just compile wheels for Python 3.14 
+
 # pychoco 0.2.4
 
 - Update to choco-solver 4.10.18
